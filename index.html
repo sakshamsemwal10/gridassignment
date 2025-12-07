@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Two Column Layout Preview</title>
+<style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+
+    /* Main two-column section */
+    .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 350px;
+    }
+
+    .two-col .left {
+        background: black;
+        color: white;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .two-col .right {
+        background: white; border: 2px solid black;
+    }
+
+    /* Two-box section */
+    .two-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .two-box .box {
+        padding: 45px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .yellow { background: black; color: white; }
+    .green { background: white; color: black; border: 2px solid black; }
+
+    h2 { margin-top: 0; }
+</style>
+</head>
+<body>
+<header style="background:black;color:white;padding:20px;font-size:24px;font-weight:bold;text-align:center;">Saksham Semwal</header>
+
+<section class="two-col">
+    <div class="left">
+        <h2>About Me</h2>
+        <p>My name is Saksham Semwal. I am passionate about technology, design, and creating meaningful digital experiences.</p>
+        <p>I have strong skills in UI/UX design, MERN stack development, Python, and Data Science.</p>
+        <p>I love building clean, modern websites and solving real-world problems through code.</p>
+    </div>
+
+    <div class="right"></div>
+</section>
+
+<section class="two-box">
+    <div class="box yellow">
+        <h2>My Qualifications</h2>
+        <p>• Completed BCA (GGSIPU)</p>
+        <p>• Currently pursuing MCA (K.R. Mangalam University)</p>
+        <p>• Skilled in Figma, UX/UI, MERN Stack</p>
+        <p>• Knowledge of Python & Data Science</p>
+    </div>
+
+    <div class="box green">
+        <h2>More About Me</h2>
+        <p>• Creative mindset</p>
+        <p>• Strong problem-solving skills</p>
+        <p>• Passionate about tech & design</p>
+        <p>• Love coding, music, and learning</p>
+    </div>
+</section>
+
+</body>
+</html>
